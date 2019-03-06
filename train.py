@@ -62,7 +62,7 @@ train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cross_
 #     dice_evaluator = tf.reduce_mean(dice_coef(label, pred))
 
 ''' Tensorboard visualization '''
-# cleanup pervious info
+# cleanup previous info
 if opt.load_from_checkpoint == '':
     cf = os.listdir(opt.checkpoint_path)
     for item in cf: 
